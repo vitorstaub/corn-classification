@@ -5,6 +5,7 @@ from os import getenv
 from dotenv import load_dotenv
 import PIL.Image
 from utils.training import *
+from utils.content import *
 
 def load_gemini() -> None:
     load_dotenv(override=True)
