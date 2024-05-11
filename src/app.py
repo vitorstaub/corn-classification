@@ -104,7 +104,6 @@ def main() -> None:
       "input: Qual a doença dessa folha de milho?",
       img[7],
       "output: Folha de milho saudavel",
-      "input: Qual a doença dessa folha de milho?",
       input_image,
       "output: ",
   ]
