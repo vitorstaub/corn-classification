@@ -62,18 +62,18 @@ def main() -> None:
     input_image = PIL.Image.open(uploaded_file)
     st.image(input_image, caption="Imagem enviada", use_column_width='auto')
     
-    current = f'{Path.cwd()}/src'
+    current = f'{Path.cwd()}'
     print(current)
     
     image_paths = [
-      current + '/utils/content/img0-cescosporiose.png',
-      current + '/utils/content/img1-mancha-branca.jpg',
-      current + '/utils/content/img2-ferrugem.jpg',
-      current + '/utils/content/img3-cescosporiose.png',
-      current + '/utils/content/img4-ferrugem.png',
-      current + '/utils/content/img5-mancha-branca.png',
-      current + '/utils/content/img6-not.jpg',
-      current + '/utils/content/img7-not.jpg'
+      current + '/src/utils/content/img0-cescosporiose.png',
+      current + '/src/utils/content/img1-mancha-branca.jpg',
+      current + '/src/utils/content/img2-ferrugem.jpg',
+      current + '/src/utils/content/img3-cescosporiose.png',
+      current + '/src/utils/content/img4-ferrugem.png',
+      current + '/src/utils/content/img5-mancha-branca.png',
+      current + '/src/utils/content/img6-not.jpg',
+      current + '/src/utils/content/img7-not.jpg'
   ]
 
     img = [PIL.Image.open(path) for path in image_paths]
