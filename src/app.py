@@ -4,8 +4,8 @@ import google.generativeai as genai
 from os import getenv
 from dotenv import load_dotenv
 import PIL.Image
-from utils.training import *
 from utils.content import *
+from pathlib import Path
 
 def load_gemini() -> None:
     load_dotenv(override=True)
@@ -61,16 +61,19 @@ def main() -> None:
     # Display uploaded image
     input_image = PIL.Image.open(uploaded_file)
     st.image(input_image, caption="Imagem enviada", use_column_width='auto')
-       
+    
+    current = f'{Path.cwd()}/src'
+    print(current)
+    
     image_paths = [
-      './utils/content/img0-cescosporiose.png',
-      './utils/content/img1-mancha-branca.jpg',
-      './utils/content/img2-ferrugem.jpg',
-      './utils/content/img3-cescosporiose.png',
-      './utils/content/img4-ferrugem.png',
-      './utils/content/img5-mancha-branca.png',
-      './utils/content/img6-not.jpg',
-      './utils/content/img7-not.jpg'
+      current + '/utils/content/img0-cescosporiose.png',
+      current + '/utils/content/img1-mancha-branca.jpg',
+      current + '/utils/content/img2-ferrugem.jpg',
+      current + '/utils/content/img3-cescosporiose.png',
+      current + '/utils/content/img4-ferrugem.png',
+      current + '/utils/content/img5-mancha-branca.png',
+      current + '/utils/content/img6-not.jpg',
+      current + '/utils/content/img7-not.jpg'
   ]
 
     img = [PIL.Image.open(path) for path in image_paths]
