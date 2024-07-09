@@ -1,29 +1,27 @@
-# 🌽 Classificador das Principais Doenças Foliares do Milho
+# 🌽 Classifier of Major Leaf Diseases in Corn
 
-Doenças que podem ser identificadas pelo modelo:
-*   Cercosporiose  (Cercospora zeae-maydis)
-*   Ferrugem Comum
-*   Mancha Branca
+Diseases that can be identified by the model:
+*   Cercospora Leaf Spot (Cercospora zeae-maydis)
+*   Common Rust
+*   White Leaf Spot
 
-![image](https://images.pexels.com/photos/96715/pexels-photo-96715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
-
-## 💻 Tecnologias & Ferramentas
+## 💻 Technologies & Tools
 
 ![Static Badge](https://img.shields.io/badge/Google%20Colab-black?style=for-the-badge&logo=googlecolab)
 ![Static Badge](https://img.shields.io/badge/Google%20Gemini-black?style=for-the-badge&logo=googlegemini)
 ![Static Badge](https://img.shields.io/badge/Python-black?style=for-the-badge&logo=python)
 
-## 🗝️ Definir variável de ambiente
+## 🗝️ Set Environment Variable
 .env
 ```
- API_KEY='SUA_CHAVE_API'
+ API_KEY='YOUR_API_KEY'
 ```
-##### [[Obter uma chave de API]](https://ai.google.dev/gemini-api/docs/api-key?hl=pt-br)
+##### [[Get an API KEY]](https://ai.google.dev/gemini-api/docs/api-key?hl=pt-br)
 
-## 🥇 Mudar caminho do treinamento
+## 🥇 Change Training Path
 ![image](https://i.ibb.co/crQhLtm/images.png")
 
-## 📖 Referências
+## 📖 References
 
-##### [Doenças Foliares do Milho - [Embrapa]](https://www.embrapa.br/agencia-de-informacao-tecnologica/cultivos/milho/producao/pragas-e-doencas/doencas/doencas-foliares)
+##### [Corn Leaf Diseases - [Embrapa]](https://www.embrapa.br/agencia-de-informacao-tecnologica/cultivos/milho/producao/pragas-e-doencas/doencas/doencas-foliares)
 ##### [Docs [API Gemini]](https://ai.google.dev/gemini-api/docs?hl=pt-br)
